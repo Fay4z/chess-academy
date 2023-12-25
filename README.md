@@ -1,1 +1,1 @@
-# chess-academy
+#Chess Academy

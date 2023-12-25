@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    html{
+      @apply bg-background font-poppins tracking-wide;
+    }
+    :root {
+      --text: #041006;
+      --background: #f5f5f5;
+      --primary: #36ce59;
+      --secondary: #BBCAC1;
+      --accent: #752DA8;
+      --foreign: #FDF7FF;
+      --gradFrom: #AAC4EC;
+      --gradTo: #2E4270;
+    }
+  }
+  
