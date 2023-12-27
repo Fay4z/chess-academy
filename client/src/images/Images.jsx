@@ -4,6 +4,10 @@ const IMAGES = {
     coach : new URL('../assets/coach.enc', import.meta.url).href,
     chessben : new URL('../assets/chessben.jpg', import.meta.url).href,
     chessbg : new URL('../assets/chessbg.jpg', import.meta.url).href,
+    logo : new URL('../assets/acalogo.jpeg', import.meta.url).href,
+    logocrt : new URL('../assets/acalogocrt.png', import.meta.url).href,
+
+    
 }
 
 export default IMAGES

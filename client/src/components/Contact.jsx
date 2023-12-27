@@ -52,8 +52,8 @@ const Contact = () => {
                       <FaHome className="h-8 w-8 text-accent" aria-hidden="true"/>
                     </div>
                     <div className="">
-                        <p className=" ">35,SandBourne Street,</p>
-                        <p>PalayamKottai,</p>
+                        <p className=" ">Maharaja Nagar Extn.,</p>
+                        <p>Srinivasa Nagar ,PalayamKottai,</p>
                         <p>Tirunelveli</p>
                     </div>
                   </div>
@@ -62,14 +62,14 @@ const Contact = () => {
                     <div className="mr-6">
                       <FaPhoneAlt  className="h-8 w-8 text-accent" aria-hidden="true"/>
                     </div>
-                    <p>+91 1234567890</p>
+                    <p>+91 7092773865</p>
                   </div>
 
                   <div className="flex items-center">
                     <div className="mr-6">
                       <FaEnvelope  className="h-8 w-8 text-accent" aria-hidden="true"/>
                     </div>
-                    <p>Example123@gmail.com</p>
+                    <p>jsabbasali@gmail.com</p>
                   </div>
                 </div>
 

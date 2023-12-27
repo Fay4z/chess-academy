@@ -139,7 +139,7 @@ function CourseDetail() {
             </div>
             <div className=" max-w-5xl m-auto my-4 grid grid-cols-1 gap-4 md:grid-cols-2">
                 {courses.map(course => (
-                    <div className=" border border-gray-300 p-7 rounded-md bg-foreign text-text" key={course.id}>
+                    <div className=" border border-gray-300 p-7 rounded-md bg-gradient-to-r from-violet-200 to-indigo-200 text-text" key={course.id}>
                         <h1 className="text-3xl sm:text-4xl mb-4 pb-3 border-b-2 text-center font-bold">{course.courseName}</h1>
                         <div className="space-y-2 pb-3 border-b-2">
                             <h3 className="text-2xl font-semibold">Learning Outcome</h3>

@@ -47,9 +47,9 @@ export function Hero() {
           <div className="mt-8 md:mt-0">
               <img
               alt="Hero Section Image"
-              className=" h-64 w-64 md:h-96 md:w-96 object-cover hover:opacity-90 transition-opacity duration-200 border border-teal-500"
+              className=" h-64 w-64 md:h-96 md:w-96 object-cover hover:opacity-90 transition-opacity duration-200 border-none"
               height="400"
-              src={IMAGES.image2}
+              src={IMAGES.logocrt}
               style={{
                   aspectRatio: "400/400",
                   objectFit: "cover",
