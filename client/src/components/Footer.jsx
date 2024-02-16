@@ -4,37 +4,13 @@ export default function Footer() {
     return (
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <NavLink href="#">
-                <FacebookIcon className="h-8 w-8 text-white" />
-                <span className="sr-only">Acme Inc</span>
-              </NavLink>
-            </div>
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="mb-4 md:mb-0 space-x-6">
               <NavLink className="text-white hover:text-gray-300" href="#">
                 Privacy Policy
               </NavLink>
               <NavLink className="text-white hover:text-gray-300" href="#">
                 copyright@2023
-              </NavLink>
-            </div>
-            <div className="flex space-x-4">
-              <NavLink className="text-white hover:text-gray-300" href="#">
-                <FacebookIcon className="h-6 w-6" />
-                <span className="sr-only">Facebook</span>
-              </NavLink>
-              <NavLink className="text-white hover:text-gray-300" href="#">
-                <TwitterIcon className="h-6 w-6" />
-                <span className="sr-only">Twitter</span>
-              </NavLink>
-              <NavLink className="text-white hover:text-gray-300" href="#">
-                <InstagramIcon className="h-6 w-6" />
-                <span className="sr-only">Instagram</span>
-              </NavLink>
-              <NavLink className="text-white hover:text-gray-300" href="#">
-                <LinkedinIcon className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
               </NavLink>
             </div>
           </div>

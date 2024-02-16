@@ -45,7 +45,7 @@ export default function Features() {
     <div className="py-4 sm:py-2">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-accent">Learn faster</h2>
+          <h2 className="text-base font-semibold leading-7 text-accent">Learn from master</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Everything you need to become a master of Chess
           </p>

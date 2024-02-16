@@ -29,7 +29,7 @@ const formData = req.body;
 console.log('Received form data:', formData);
 res.send('Form data received successfully!');
 const details = {
-    from: `"Contact:Chess Academy form" <${process.env.EMAIL_USER}>`, // sender address
+    from: `"Enquiry from:Abbas Chess Academy" <${process.env.EMAIL_USER}>`, // sender address
     to: `${process.env.MAIL_TO}`, // list of receivers
     subject: "Hello ✔", // Subject line
     text: "Hello world?", // plain text body
