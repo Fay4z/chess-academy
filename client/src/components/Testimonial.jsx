@@ -8,7 +8,7 @@ function Testimonals() {
       </h1>
 
       <div className="grid grid-row gap-10 lg:grid-cols-1">
-        <div className=" bg-green-200 rounded-md text-center p-7 mx-auto max-w-xl">
+        <div className="rounded-md text-center p-7 mx-auto max-w-xl bg-gradient-to-r from-violet-200 to-indigo-200">
           <div className="grid justify-center space-y-6 py-5">
             <img
               src={IMAGES.ajayIM}

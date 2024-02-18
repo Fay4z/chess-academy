@@ -11,7 +11,7 @@ const IMAGES = {
   chessrook: new URL("../assets/chessrook.png", import.meta.url).href,
   chessqueen: new URL("../assets/chessqueen.png", import.meta.url).href,
   ajayIM: new URL("../assets/ajayIM.jpeg", import.meta.url).href,
-  heroBoard: new URL("../assets/hero-board.jpg", import.meta.url).href,
+  heroImage: new URL("../assets/hero-image.png", import.meta.url).href,
 };
 
 export default IMAGES;

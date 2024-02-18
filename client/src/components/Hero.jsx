@@ -53,12 +53,12 @@ export function Hero() {
           </button>
         </div>
       </div>
-      <div className="mt-8 md:mt-0">
+      <div className="mt-4 md:mt-0">
         <img
           alt="Hero Section Image"
-          className=" h-64 w-64 md:h-96 md:w-96 object-cover border-none rounded-md mix-blend-darken"
+          className=" h-80 w-96 md:h-96 md:w-[600px] md:-py-10 xl:h-[420px] object-cover border-none rounded-md mix-blend-darken "
           height="400"
-          src={IMAGES.heroBoard}
+          src={IMAGES.heroImage}
           style={{
             aspectRatio: "400/400",
             objectFit: "cover",
