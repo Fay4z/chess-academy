@@ -24,6 +24,14 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/formData", (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Max-Age", "1800");
+  res.setHeader("Access-Control-Allow-Headers", "content-type");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "PUT, POST, GET, DELETE, PATCH, OPTIONS"
+  );
   const formData = req.body;
   console.log("Received form data:", formData);
   res.send("Form data received successfully!");

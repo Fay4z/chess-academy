@@ -1,29 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-
     extend: {
       colors: {
-        'text': 'var(--text)',
-        'background': 'var(--background)',
-        'primary': 'var(--primary)',
-        'secondary': 'var(--secondary)',
-        'accent': 'var(--accent)',
-        'foreign': 'var(--foreign)',
-        'gradFrom': 'var(--gradFrom)',
-        'gradTo': 'var(--gradTo)',
-
+        text: "var(--text)",
+        background: "var(--background)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
+        foreign: "var(--foreign)",
+        gradFrom: "var(--gradFrom)",
+        gradTo: "var(--gradTo)",
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        poppins: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        'hero-pattern': "url('src/assets/chessbg.jpg')",
+        "hero-pattern": "url('src/assets/chessbg.jpg')",
       },
     },
   },
@@ -39,5 +34,4 @@ export default {
     // logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
-}
-
+};

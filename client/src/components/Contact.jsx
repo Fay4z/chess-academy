@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaHome, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import axios from "axios";
+import { FaHome, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const DEFAULT_FORM_VALUE = {
@@ -24,14 +24,29 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formVal);
-
+    console.log(JSON.stringify(formVal));
     try {
-      // const response = await axios.post(`${import.meta.env.VITE_META_URL}/formData`, formVal);
-      const response = await axios.post(
-        `https://${import.meta.env.VITE_VERCEL_URL}/formData`,
-        formVal
+      // const response = await axios.post(
+      //   `https://chess-academy.vercel.app/formData`,
+      //   formVal
+      // );
+      const response = await fetch(
+        `https://chess-academy.vercel.app/formData`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formVal),
+        }
       );
-      console.log("Form data sent:", response.data);
+
+      if (!response.ok) {
+        throw new Error(`error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log("Form data sent:", data);
       setEmailStatus("success");
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -40,6 +55,7 @@ const Contact = () => {
       setFormVal(DEFAULT_FORM_VALUE);
     }
   };
+
   return (
     <>
       <section className=" px-10 md:px-20 relative z-10 overflow-hidden py-20 lg:py-[120px]">
